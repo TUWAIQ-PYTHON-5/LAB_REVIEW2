@@ -44,9 +44,6 @@ class Student(Programmer):
         self.set_name(name)
         self.set_studentID(studentID)
         self.set_programmingLanguage(programmingLanguage)
-        #self.__name = name
-        #self.__studentID = studentID
-        #self.__programmingLanguage = programmingLanguage
     
     def set_studentID(self,studentID):
         if type(studentID) != int:
@@ -55,8 +52,13 @@ class Student(Programmer):
     def get_studentID(self):
         return self.__studentID
 
+    #Methods
     def write_info(self):
         student_file_info=open('student_info.txt','a+',encoding='utf-8')
         student_file_info.write(f'Student Name is : {self.get_name()} \t\t Student ID is : {self.get_studentID()} \t\t Programming Language is : {self.get_programmingLanguage()} \n')
         student_file_info.close()
         return f'student information has been recorded'
+    
+    def print_info(self):
+        return f'Student Name is : {self.get_name()} \t\t Student ID is : {self.get_programmerID()} \t\t Programming Language is : {self.get_programmingLanguage()} '
+
