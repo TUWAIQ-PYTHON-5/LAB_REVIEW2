@@ -48,10 +48,7 @@ class student(Programmer):
 
     def write(self):
         file_name =open('student.txt'  , "a" , encoding="utf-8") 
-        file_name.writelines(f"{self.get_name()} / {self.get_ID_programmer()} / {self.get_programming_language()} \n ")
+        file_name.writelines(f"name : {self.get_name()} / ID : {self.get_ID_programmer()} / LANGUAGE : {self.get_programming_language()} \n ")
         file_name = open("student.txt", "r", encoding="utf-8")
         
         file_name.close()
-             
-
-        

@@ -4,7 +4,7 @@ from Classes import Programmer , student
 
 
 
-prog1 = Programmer("mhammed" , 127 , "php")
+prog1 = Programmer("mhammed" , 172 , "php")
 std1 = student("ahmed", 122 , "JS")
 
 prog1.write()
@@ -16,7 +16,7 @@ std1.write()
 def readFile(fileName : str):
     file = open(fileName , "r" , encoding="utf-8")
     content = file.read()
-    print("content of the file is : " , content)
+    print("OJbect : " , content)
     file.close()
 
 
@@ -30,4 +30,4 @@ try:
     readFile("programmer.txt")
     readFile("student.txt")
 except:
-    print("somthing error")    
+    print("somthing error") 
