@@ -2,9 +2,9 @@ class Programmer:
     Type = 'Programmer'
     def __init__(self,name:str,programmerID:int,programmingLanguage:str):
     
-        self.__name = name
-        self.__programmingLanguage = programmingLanguage
-        self.__programmerID = programmerID
+        self.set_name(name)
+        self.set_programmerID(programmerID)
+        self.set_programmingLanguage(programmingLanguage)
 
     def set_name(self,name:str):
         self.__name = name.upper()
@@ -41,9 +41,12 @@ class Student(Programmer):
     Type='Student'
     def __init__(self, name: str, studentID:int, programmingLanguage: str):
         super().__init__(name, studentID, programmingLanguage)
-        self.__name = name
-        self.__studentID = studentID
-        self.__programmingLanguage = programmingLanguage
+        self.set_name(name)
+        self.set_studentID(studentID)
+        self.set_programmingLanguage(programmingLanguage)
+        #self.__name = name
+        #self.__studentID = studentID
+        #self.__programmingLanguage = programmingLanguage
     
     def set_studentID(self,studentID):
         if type(studentID) != int:
