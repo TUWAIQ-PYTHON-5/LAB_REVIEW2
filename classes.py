@@ -76,7 +76,7 @@ class student(programmer):
     def write_info(self) :
 
         file = open("students.txt", "a", encoding="utf-8")
-        file.write(f"{self.get_name()}\t\t{self.__student_ID}\t\t{self.get_programming_language()}")
+        file.write(f"{self.get_name()}\t\t{self.__student_ID}\t\t{self.get_programming_language()}"+"\n")
         file.close()
         return "Student information has been recorded"
 
