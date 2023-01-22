@@ -13,8 +13,6 @@
 
 **methods:**  
 \-write\_info(): open the programmers.txt file, and write "-name-\\t\\t-programmer ID-\\t\\t-Programming language-" then return “Programmer information has been recorded” -print it in main.py-.  
- 
-
 **Define "subclass" (student):**  
 **Class attribute:** type=student  
 **private properties:**  
