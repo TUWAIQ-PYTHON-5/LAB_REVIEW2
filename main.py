@@ -18,15 +18,27 @@ def showContents(fileName):
     try:
         file = open(fileName, "r", encoding="utf-8")
     except:
-        raise TypeError("'str' object cannot be interpreted as an integer")
-    finally:
-        print(f"Content is saved")
+        raise TypeError("please provide the path")
     content = file.read()
     file.close()
     return content
 
-print(showContents("programmer.txt"))
+try:
+    print(showContents("programmer.txt"))
+except:
+    print("something went wrong!!")
+else:
+    print("successful")
+finally:
+    print("completed")
 
 print("--"*10)
 
-print(showContents("student.txt"))
+try:
+    print(showContents("student.txt"))
+except:
+    print("something went wrong!!")
+else:
+    print("successful")
+finally:
+    print("completed")
