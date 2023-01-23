@@ -25,7 +25,7 @@ class Programmer():
         return self.__languge
 
     def write_info(self):
-        file=open('programmers.txt',"r+",encoding='utf-8')
+        file=open('programmers.txt',"a+",encoding='utf-8')
         try:
             file.writelines(f"{self.__name}\t\t {self.__programmer_id}\t\t {self.__languge}\n")
         except:
