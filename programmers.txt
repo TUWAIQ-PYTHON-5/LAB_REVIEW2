@@ -1,0 +1,3 @@
+salem 	2099	python
+amal 	10222	c
+amal 	10222	c
