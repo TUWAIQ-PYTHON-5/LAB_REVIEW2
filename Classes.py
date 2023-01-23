@@ -55,7 +55,10 @@ class student(programmer):
 
     def write_info(self):
         file_name =open('student.txt'  , "a" , encoding="utf-8") 
-        file_name.writelines(f" : {self.get_name()} /  : {self.get_ID_programmer()} /: {self.get_programming_language()} \n ")
+        try:
+            file_name.writelines(f"{self.get_name()} / {self.get_ID_programmer()} / {self.get_programming_language()} \n")
+        except:
+            print('error')
         file_name = open("student.txt", "r", encoding="utf-8")
         
         file_name.close()
